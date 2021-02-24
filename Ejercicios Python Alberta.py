@@ -14,3 +14,11 @@ b=int(input('Enter an integer >'))
 print(a, 'to the power of', b, 'is', a**b)
 print(b, 'to the power of', a, 'is', b**a)
 print('the max of', a**b, 'and', b**a, 'is', max(a**b,b**a))
+
+
+#  Write a Python program that asks the user to input a string and a sub-string and outputs
+#  the number of occurrences of the sub-string in the string.
+
+palabra = input("Enter a string >")
+subpalabra = input("Enter a substring >")
+print("the substring" + ' "' + subpalabra + '" ' + "appears " + str(palabra.count(subpalabra)) + " times in" + ' "' + palabra + '"')
