@@ -22,3 +22,15 @@ print('the max of', a**b, 'and', b**a, 'is', max(a**b,b**a))
 palabra = input("Enter a string >")
 subpalabra = input("Enter a substring >")
 print("the substring" + ' "' + subpalabra + '" ' + "appears " + str(palabra.count(subpalabra)) + " times in" + ' "' + palabra + '"')
+
+
+#  Write a Python program that asks the user to input a non-negative integer.
+#  If the user enters a non-negative integer, output two times that value.
+#  If the user does not enter a non-negative integer, output a warning message.
+
+
+entrada = input("Enter a non-negative integer >")
+if entrada.isalpha() or int(entrada) < 0:
+    print(entrada, "is not a non-negative integer")
+else:
+    print(entrada, "* 2 is", int(entrada) * 2)
